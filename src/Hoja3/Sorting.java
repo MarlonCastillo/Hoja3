@@ -1,4 +1,9 @@
-
+/*INTEGRANTES:
+Marlon Castillo		14427
+Cristian Castillo	14015
+Javier Lima		14373
+María Fernanda Dávila	14482
+*/
 
 //importamos las clases a utilizar
 import java.util.List;
