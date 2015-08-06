@@ -4,13 +4,18 @@
  *
  * @author Marlon
  */
-
+/*INTEGRANTES:
+Marlon Castillo		14427
+Cristian Castillo	14015
+Javier Lima		14373
+María Fernanda Dávila	14482
+*/
 /*---------------------------
 COMPLEJIDAD TEORICA
 -----------------------------
 Selection Sort 	
 Insertion Sort 	
-Merge Sort 	
+Merge Sort 		
 Quick Sort 		
 Radix Sort          O(n)
 -----------------------------*/
