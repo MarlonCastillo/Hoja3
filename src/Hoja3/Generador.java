@@ -13,11 +13,11 @@ María Fernanda Dávila	14482
 /*---------------------------
 COMPLEJIDAD TEORICA
 -----------------------------
-Selection Sort 	
-Insertion Sort 	
-Merge Sort 		
-Quick Sort 		
-Radix Sort          O(n)
+Selection Sort 		O(n^2)
+Insertion Sort 		O(n^2)
+Merge Sort 		O(nlog)
+Quick Sort 		O(nlog)
+Radix Sort          	O(n)
 -----------------------------*/
 
 import java.io.FileReader;
