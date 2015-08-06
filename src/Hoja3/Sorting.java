@@ -51,15 +51,15 @@ http://www.mycstutorials.com/articles/sorting/mergesort
                     placement *= RADIX;
 	  	}
 	}
-    public int [] mergesort(int input[]) {
+    public Datos [] mergesort(Datos input[]) {
                 if (input.length>1){
                     int elementsInA1 = input.length/2;
                     int elementsInA2 = input.length/2;
                     if ((input.length % 2)==1){
                         elementsInA2 += 1;   
                     }
-                    int arr1[]=new int [elementsInA1];
-                    int arr2[]=new int [elementsInA1];
+                    Datos arr1[]=new Datos [elementsInA1];
+                    Datos arr2[]=new Datos [elementsInA1];
                     for(int i = 0; i < elementsInA1; i++){
 			arr1[i] = input[i];
                     }
@@ -93,48 +93,6 @@ http://www.mycstutorials.com/articles/sorting/mergesort
                     }
                 }
             return input;
-        }
-    public static void mergesort(Datos [] input) {
-                if (input.length>1){
-                    int elementsInA1 = input.length/2;
-                    int elementsInA2 = input.length/2;
-                    if ((input.length % 2)==1){
-                        elementsInA2 += 1;   
-                    }
-                    Datos arr1[]=new Datos [elementsInA1];
-                    Datos arr2[]=new Datos [elementsInA1];
-                    for(int i = 0; i < elementsInA1; i++){
-                        arr1[i] = input[i];
-                    }
-                    for(int i = elementsInA1; i < elementsInA1 + elementsInA2; i++){
-                        arr2[i - elementsInA1] = input[i];
-                    }
-                    arr1 = mergesort (arr1);
-                    arr2 = mergesort (arr2);
-                    int i=0, j=0, k=0;
-                    while(arr1.length != j && arr2.length !=k){
-                        if (arr1[j] < arr2[k]){
-                            input[1] = arr1[j];
-                            i++;
-                            j++;
-                        }
-                        else{
-                            input[i]=arr2[k];
-                            i++;
-                            k++;
-                        }
-                    }
-                    while (arr1.length!=j){
-                        input[i]=arr1[j];
-                        i++;
-                        j++;
-                    }
-                    while (arr1.length!=j){
-                        input[i]=arr1[j];
-                        i++;
-                        k++;
-                    }
-                }
         }
     
 }
