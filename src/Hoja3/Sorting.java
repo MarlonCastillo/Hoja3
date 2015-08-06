@@ -51,7 +51,7 @@ http://www.mycstutorials.com/articles/sorting/mergesort
                     placement *= RADIX;
 	  	}
 	}
-    public Datos [] mergesort(Datos input[]) {
+    public static Datos [] mergesort(Datos input[]) {
                 if (input.length>1){
                     int elementsInA1 = input.length/2;
                     int elementsInA2 = input.length/2;
@@ -61,16 +61,16 @@ http://www.mycstutorials.com/articles/sorting/mergesort
                     Datos arr1[]=new Datos [elementsInA1];
                     Datos arr2[]=new Datos [elementsInA1];
                     for(int i = 0; i < elementsInA1; i++){
-			arr1[i] = input[i];
+			arr1[i] = new Datos(input[i].getDato());
                     }
                     for(int i = elementsInA1; i < elementsInA1 + elementsInA2; i++){
-			arr2[i - elementsInA1] = input[i];
-                    }
+			arr2[i - elementsInA1] = new Datos(input[i].getDato());
+                    } 
                     arr1 = mergesort (arr1);
                     arr2 = mergesort (arr2);
                     int i=0, j=0, k=0;
                     while(arr1.length != j && arr2.length !=k){
-                        if (arr1[j] < arr2[k]){
+                        if (arr1[j].getDato() < arr2[k].getDato()){
                             input[1] = arr1[j];
                             i++;
                             j++;
@@ -94,5 +94,6 @@ http://www.mycstutorials.com/articles/sorting/mergesort
                 }
             return input;
         }
-    
+
+  
 }

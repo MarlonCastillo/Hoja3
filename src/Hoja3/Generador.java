@@ -39,7 +39,9 @@ public class Generador {
                 numeros[a] = new Datos(Integer.parseInt(contenido.readLine()));  
             }
             //usamos un algoritmo de sorting para ordenar la lista
-            Sorting.radixSort(numeros); 
+            Sorting.mergesort(numeros);
+            
+            
             //recorremos cada objeto de la lista y luego extraemos su valor para imprimirlo
             for (Datos numero : numeros){
                 System.out.println(numero.getDato());
